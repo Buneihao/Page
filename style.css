@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1200px; 
+    max-width: 1200px; /* 调整容器的最大宽度 */
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -33,22 +33,24 @@ p {
     margin-top: 20px;
 }
 
+/* Flex container for the audio players */
 .audio-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* 当屏幕较小时，自动换行 */
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; 
+    gap: 20px; /* 控制每个音频播放器之间的间距 */
     margin-bottom: 30px;
 }
 
+/* Each audio item takes up 1/4 of the container width */
 .audio-item {
-    flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px); /* 25% 的宽度减去 margin */
     box-sizing: border-box;
 }
 
 audio {
-    width: 100%; 
+    width: 100%; /* 使得音频播放器占满每个音频项的宽度 */
 }
 
 footer {
