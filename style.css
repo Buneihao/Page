@@ -36,16 +36,16 @@ p {
 /* Flex container for the audio players */
 .audio-container {
     display: flex;
-    flex-wrap: wrap; /* 当屏幕较小时，自动换行 */
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px; /* 控制每个音频播放器之间的间距 */
     margin-bottom: 30px;
+    flex-wrap: nowrap; /* 禁止换行 */
 }
 
-/* Each audio item takes up 1/4 of the container width */
+/* Adjust the width of each audio item */
 .audio-item {
-    flex: 1 1 calc(25% - 20px); /* 25% 的宽度减去 margin */
+    flex: 1 1 22%; /* 将每个音频项的宽度设为 22%，保持足够的间距 */
     box-sizing: border-box;
 }
 
